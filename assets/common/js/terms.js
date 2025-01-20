@@ -2,10 +2,18 @@ $(document).ready(function () {
   let cookie = document.cookie
     .split(";")
     .find((c) => c.includes("terms_accepted"));
+  console.log(cookie);
 
   if (!cookie) {
     document.getElementById("termsModal").classList.remove("hideItem");
     document.querySelector(".modal-backdrop").classList.remove("hideItem");
+  }
+  if (cookie) {
+    document.getElementById("termsModal").classList.add("hideItem");
+    document.querySelector(".modal-backdrop").classList.add("hideItem");
+    document.querySelector(".modal-terms-container").classList.add("hideItem");
+
+
   }
 
   $(".btn_decline").click(function () {

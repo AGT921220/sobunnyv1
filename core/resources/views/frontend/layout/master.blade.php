@@ -10,7 +10,6 @@
        </nav>
     </div>
 @endif
-
 @yield('content')
 
 @include('frontend.layout.partials.footer')

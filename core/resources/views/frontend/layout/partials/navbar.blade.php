@@ -1,3 +1,4 @@
+
 @inject('categoriesService', 'App\Services\CategoriesServices') <!-- Inyecta la clase o servicio -->
 
 @php
@@ -17,3 +18,4 @@
     $cities = Modules\CountryManage\app\Models\City::all();
 @endphp
 @include('frontend.layout.partials.navbar-variant.navbar-' . $navbar_variant)
+
