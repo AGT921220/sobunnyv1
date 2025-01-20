@@ -2,7 +2,7 @@ $(document).ready(function () {
   let cookie = document.cookie
     .split(";")
     .find((c) => c.includes("terms_accepted"));
-  console.log(cookie);
+  // console.log(cookie);
 
   if (!cookie) {
     document.getElementById("termsModal").classList.remove("hideItem");
